@@ -20,7 +20,7 @@
       .then(function(results){
         $("#display").removeClass();
         $("#display").addClass("bg-success");
-        $("#display").html("enter success");
+        $("#display").html("入力されました。");
       })
       .catch(function(results){
         $("#display").removeClass();
@@ -38,7 +38,7 @@
         $("#display").removeClass();
         $("#display").addClass("text-light");
         $("#display").addClass("bg-primary");
-        $("#display").html(msg);
+        $("#display").html(msg+"入力した数字を表示しています。");
       })
       .catch(function(error){
         $("#display").removeClass();
@@ -71,7 +71,7 @@ return uTdata.update();
 .then(function(results){
 $("#display").removeClass();
 $("#display").addClass("bg-success");
-$("#display").html("update success");
+$("#display").html("アップデートしました。");
 })
 .catch(function(error){
 $("#display").removeClass();
