@@ -38,7 +38,7 @@
         $("#display").removeClass();
         $("#display").addClass("text-light");
         $("#display").addClass("bg-primary");
-        $("#display").html(msg+"入力した数字を表示しています。");
+        $("#display").html(msg+"上の数字は入力した数字を表示しています。");
       })
       .catch(function(error){
         $("#display").removeClass();
@@ -58,7 +58,7 @@ $("#display").html("消去成功です！");
 .catch(function(error){
 $("#display").removeClass();
 $("#display").addClass("bg-warning");
-$("#display").html("delete fail:" + JSON.stringify(error));
+$("#display").html("消去する数字がありません。" + JSON.stringify(error));
 })
     }
     function updateData() {
@@ -76,7 +76,7 @@ $("#display").html("アップデートしました。");
 .catch(function(error){
 $("#display").removeClass();
 $("#display").addClass("bg-warning");
-$("#display").html("update fail:" + JSON.stringify(error));
+$("#display").html("アップデートできる数字がありません。" + JSON.stringify(error));
 })
     }
     function countData() {
